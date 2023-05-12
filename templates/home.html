@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HOMEPAGE</title>
+</head>
+<body>
+    <h2>dato il nome di una provincia inserito dall'utente, visualizzarne i confini su una mappa di contextily</h2>
+    <form action="/esercizio1" method = "GET">https://bernasconil-geopandassj-xm08vhfwp9q.ws-eu97.gitpod.io/
+        
+        <label for="ciao">Seleziona una regione da un menù: </label>
+        <select name = "provinciaInput" id = "ciao">
+            {% for r in lista %}
+                <option value = "{{r}}">{{r}}</option>
+            {% endfor %}
+        </select><br>
+
+        <p><input type = "submit" value = "Clicca per conoscere i dati" /></p>
+    </form> <br> <br>
+    
+    
+    <h2>creare un nuovo geodataset contenente i comuni di quella provincia</h2>
+    <form action="/esercizio2" method = "GET">
+        
+        <input type="text" name = "provinciaInput2" ></input> <br>
+
+        <p><input type = "submit" value = "Clicca per conoscere i dati" /></p>
+    </form> <br> <br>
+
+    <h2>visualizzare l'elenco dei comuni presenti in quella provincia. L'elenco deve essere in ordine alfabetico</h2>
+    <form action="/esercizio3" method = "GET">
+        
+        <input type="text" name = "provinciaInput3" ></input> <br>
+
+        <p><input type = "submit" value = "Clicca per conoscere i dati" /></p>
+    </form> <br> <br>
+
+    
+    <h2>costruire un dizionario contenente i nomi dei comuni della provincia inserita e la loro estensione</h2>
+    <form action="/esercizio4" method = "GET">
+        
+        <input type="text" name = "provinciaInput4" ></input> <br>
+
+        <p><input type = "submit" value = "Clicca per conoscere i dati" /></p>
+    </form> <br> <br>
+
+    <h2>costruire un dizionario contenente i nomi dei comuni della provincia inserita e la loro estensione</h2>
+    <form action="/esercizio5" method = "GET">
+        
+
+        <p><input type = "submit" value = "Clicca per conoscere i dati" /></p>
+    </form> <br> <br>
+
+
+
+</body>
+</html>
